@@ -13,4 +13,9 @@ class Employee extends Model
         'status',
         'position'
     ];
+
+    public function users()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

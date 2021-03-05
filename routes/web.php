@@ -24,3 +24,8 @@ Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
+Route::get('employee', [EmployeeController::class, 'index']);
+Route::post('employee', [EmployeeController::class, 'create']);
+Route::put('/employee/{id}', [EmployeeController::class, 'update']);
+Route::delete('/employee/{id}', [EmployeeController::class, 'delete']);
+
